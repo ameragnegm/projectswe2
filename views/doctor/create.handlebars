@@ -1,0 +1,48 @@
+<h1>Create a new doctor</h1>
+
+<form action="/doctor" method="post">
+
+    <div>
+        <label for="">Username</label>
+        <input type="text" class="form-control" name="username">
+
+    </div>
+
+    <div>
+        <label for="">Password</label>
+        <input type="password" class="form-control" name="password">
+
+    </div>
+
+
+    
+    <div>
+        <label for="">ID</label>
+        <input type="text" class="form-control" name="id">
+
+    </div>
+
+    <div>
+        <label for="">Subject</label>
+        <select id="" class="form-select" name="subject">
+            {{#each subject}}
+
+            <option value="{{_id}}">{{name}}</option>
+
+            {{/each}}
+        </select>
+    </div>
+    
+    <div>
+        <label for="">Role</label>
+        <select id="" class="form-select" name="role">
+            {{#each user}}
+            <option value="{{_id}}">{{role}}</option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="mt-3">
+        <button class="btn btn-success" type="submit">save</button>
+    </div>
+
+</form>

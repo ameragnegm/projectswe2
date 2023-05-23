@@ -1,0 +1,13 @@
+<h1>Doctors</h1>
+
+<div class="my-2">
+  <a href="/doctor/create">Add a new doctor</a>
+</div>
+
+{{#each doctor}}
+
+<div>
+  <a href="/doctor/{{_id}}">{{username}}</a>
+</div>
+
+{{/each}}
